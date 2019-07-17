@@ -45,43 +45,44 @@ function result(a){
   for(i = 0; i<3; i++){
     if((a[i][j]=="X") && (a[i][j+1]=="X") && (a[i][j+2]=="X")){
         document.getElementById("arr").innerHTML = "X is winner";
-        document.getElementById("bd").style.display = 'none';
+        setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
+
     }
     else if((a[i][j]=="O") && (a[i][j+1]=="O") && (a[i][j+2]=="O")){
         document.getElementById("arr").innerHTML = "O is winner";
-        document.getElementById("bd").style.display = 'none';
+        setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][i]=="X") && (a[j+1][i]=="X") && (a[j+2][i]=="X")){
       document.getElementById("arr").innerHTML = "X is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][i]=="O") && (a[j+1][i]=="O") && (a[j+2][i]=="O")){
       document.getElementById("arr").innerHTML = "O is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][j]=="O") && (a[j+1][j+1]=="O") && (a[j+2][j+2]=="O")){
       document.getElementById("arr").innerHTML = "O is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][j]=="X") && (a[j+1][j+1]=="X") && (a[j+2][j+2]=="X")){
       document.getElementById("arr").innerHTML = "X is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][j]=="O") && (a[j+1][j+1]=="O") && (a[j+2][j+2]=="O")){
       document.getElementById("arr").innerHTML = "O is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][j+2]=="X") && (a[j+1][j+1]=="X") && (a[j+2][j]=="X")){
       document.getElementById("arr").innerHTML = "X is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if((a[j][j+2]=="O") && (a[j+1][j+1]=="O") && (a[j+2][j]=="O")){
       document.getElementById("arr").innerHTML = "O is winner";
-      document.getElementById("bd").style.display = 'none';
+      setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
     else if(count==9){
         document.getElementById("arr").innerHTML = "Draw";
-        document.getElementById("bd").style.display = 'none';
+        setTimeout(function(){document.getElementById("bd").style.display = 'none';}, 1000);
     }
   }
 }
