@@ -71,7 +71,6 @@ table tr td{
   text-align: center;
   color: white;
   font-size: x-large;
-  padding: 20px;
 }
 .cell:hover{
   transform: scale(1.05,1.05);
