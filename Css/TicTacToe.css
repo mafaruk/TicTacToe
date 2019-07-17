@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+.back{
+  width:75%;
+  height: auto;
+  background-color: blue;
+  transform: skew(40deg);
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+}
+.main{
+  height: auto;
+  margin: 25px;
+  transform: skew(-40deg);
+}
+
+.head{
+  text-align: right;
+  transform: skew(-40deg);
+  color: white;
+  font-style: italic;
+  font-size: 50px;
+  padding-right: 20px;
+  animation-name: rotate;
+  animation-duration: 4s;
+}
+@keyframes roatate {
+    from{
+      transform: rotate(-40deg);
+    }
+    to{
+      transform: rotate(320deg);
+    }
+
+}
+h6{
+  text-align:right;
+  transform: skew(-40deg);
+  color: white;
+  padding-left: 20px;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr td{
+  width:100px;
+  height: 50px;
+  text-align: center;
+}
+.oturn,.xturn{
+  text-align: center;
+  width: 33%;
+  text-align: center;
+  background-color: rgb(102, 0, 102);
+  border-radius: 15px;
+
+}
+.oturn h1, .xturn h1{
+  padding-top: 10px;
+  font-size: 100px;
+  color: white;
+
+}
+.cell{
+  border: 1px solid black;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  padding: 20px;
+}
+.cell:hover{
+  transform: scale(1.05,1.05);
+}
+.board{
+  width:33%;
+}
+.rst{
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 10px;
+  animation-name: example;
+  animation-duration: 4s;
+  background-color: rgb(102, 0, 102);
+}
+.rst:hover{
+  background-color: rgb(175, 0, 175);
+}

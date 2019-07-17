@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/bootstrap-grid.css">
+    <link rel="stylesheet" href="Css/TicTacToe.css">
+    <script  type="text/javascript"  src="Js/bootstrap.js"></script>
+    <script type="text/javascript" src="Js/bootstrap.bundle.js"></script>
+
+  </head>
+  <body class="container-fluid">
+    <div class="back">
+      <h1 class="head">Tic Tac Toe <h6>by Mafaruk</h6></h1>
+      <div class="row main">
+        <div class="col-md-4 oturn" id="o">
+            <h1>O</h1>
+        </div>
+        <div class="col-md-4 board" id="bd">
+          <table class="table-responsive">
+        <tr class="col-sm-4">
+          <td><div class="cell"  id="1_1" onclick="setvalue('1_1');"></div></td>
+          <td><div class="cell" id="1_2" onclick="setvalue('1_2');"></div></td>
+          <td><div class="cell" id="1_3" onclick="setvalue('1_3');"></div></td>
+        </tr>
+        <tr class="col-sm-4">
+          <td><div class="cell"  id="2_1" onclick="setvalue('2_1');"></div></td>
+          <td><div class="cell" id="2_2" onclick="setvalue('2_2');"></div></td>
+          <td><div class="cell" id="2_3" onclick="setvalue('2_3');"></div></td>
+        </tr>
+        <tr class="col-md-4">
+          <td><div class="cell"  id="3_1" onclick="setvalue('3_1');"></div></td>
+          <td><div class="cell" id="3_2" onclick="setvalue('3_2');"></div></td>
+          <td><div class="cell" id="3_3" onclick="setvalue('3_3');"></div></td>
+        </tr>
+      </table>
+        </div>
+        <div class="col-md-4 xturn" id="x">
+              <h1>X</h1>
+        </div>
+        <input class="rst btn-block" type="button" name="" value="Reset" onclick="document.location.reload()">
+      </div>
+
+    </div>
+    <h1 id="arr"></h1>
+
+    <script type="text/javascript" src="Js/TicTacToe.js"></script>
+  </body>
+</html>
