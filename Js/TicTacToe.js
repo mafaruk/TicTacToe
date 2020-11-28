@@ -9,6 +9,8 @@ function setvalue(x){
   if(count%2==0){
     if(arr[res[0]-1][res[1]-1]=="."){
       xelem.style.backgroundColor='rgb(102, 0, 102)';
+	  xelem.style.transform  ='scale(1.05,1.05)';
+	  oelem.style.transform  ='scale(1,1)';
       oelem.style.backgroundColor = 'rgb(175, 0, 175)';
       document.getElementById(x).innerText = "X";
       count++;
@@ -24,6 +26,8 @@ function setvalue(x){
   else{
     if(arr[res[0]-1][res[1]-1]=="."){
       oelem.style.backgroundColor='rgb(102, 0, 102)';
+	  oelem.style.transform  ='scale(1.05,1.05)';
+	  xelem.style.transform  ='scale(1,1)';
       xelem.style.backgroundColor='rgb(175, 0, 175)';
       document.getElementById(x).innerText = "O";
       document.getElementById("arr").innerHTML = "X's turn";
