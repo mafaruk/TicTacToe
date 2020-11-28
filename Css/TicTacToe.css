@@ -91,11 +91,4 @@ table tr td{
 .rst:hover{
   background-color: rgb(175, 0, 175);
 }
-#x:hover {
-	transform: scale(1.05,1.05);
-	
-}
-#o:hover{
-	transform: scale(1.05,1.05);
-	
-}
+
